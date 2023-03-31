@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 90vw;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e3768;
+}
+
+
+#sudoku-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+
+  width: 58vmin;
+  aspect-ratio: 1 / 1;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+  font-weight: bold;
+
+  border: 2px solid #555555;
+  height: calc((50vmin - 10px) / 9);
+  width: calc((50vmin - 10px) / 9);
+  background-color: #b0d8e3;
+
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#numpad {
+  display: inline-block;
+}
+
+#numpadButtonCol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.numpadButton {
+  width: 6vmin;
+  /* height: 50vmax; */
+  font-size: 4vmin;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+}
